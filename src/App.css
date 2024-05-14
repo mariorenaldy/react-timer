@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
 @font-face {
   font-family: Anurati;
   src: url(assets/Anurati-Pro-Regular.otf);
@@ -16,29 +18,13 @@
   color: white;
 }
 
-#sandglass {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-#sandglass:hover {
-  filter: drop-shadow(0 0 2em orange);
+#title{
+  font-family: Anurati;
+  font-size: 3em;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  #sandglass {
-    animation: logo-spin infinite 20s linear;
-  }
+#timer-r{
+  font-family: Anurati;
 }
 
 #input-time {
@@ -76,12 +62,13 @@
 #widget-container {
   background-color: #1f1f1f;
   color: white;
-  width: 250px;
-  height: 100px;
+  width: 400px;
+  height: 150px;
   box-sizing: border-box;
-  padding: 10px;
-  font-size: 1.25em;
+  padding: 15px;
+  font-size: 2em;
   border-radius: 7px;
+  box-shadow: inset 3px 3px 15px 0px black, inset -3px 0px 15px 0px black;
 }
 
 #button-container {
@@ -91,23 +78,24 @@
 
 .button {
   border-radius: 2px;
-  font-size: 0.6em;
-  font-weight:500;
+  font-size: 0.45em;
+  font-family: "Libre Franklin";
+  font-weight: 500;
   text-transform: uppercase;
-  padding: 7px 9px 6px;
-  font-family: 'Inter';
+  padding: 8px 15px;
   cursor: pointer;
   transition: 0.3s;
 }
 
 #start-btn {
-  background-color: #8ab4f8;
-  border: 1px solid #8ab4f8;
+  background-color: orange;
+  border: 1px solid orange;
 }
 
 #start-btn:hover{
-  background-color: #1a73e8;
-  border: 1px solid #1a73e8;
+  background-color: orange;
+  border: 1px solid orange;
+  opacity: 0.8;
 }
 
 #reset-btn {
@@ -117,8 +105,9 @@
 }
 
 #reset-btn:hover{
-  background-color: #797c80;
-  border: 1px solid #797c80;
+  background-color: #bdc1c6;
+  border: 1px solid #bdc1c6;
+  opacity: 0.8;
 }
 
 #sound-btn{
@@ -126,22 +115,14 @@
   border: transparent;
   cursor: pointer;
   position: absolute;
-  right: -15px;
+  right: 5px;
   top: 15px;
 }
 
 #sound-btn img{
-  width: 27px;
+  width: 30px;
   filter: invert(1);
   opacity: 0.7;
-}
-
-#title{
-  font-family: Anurati;
-}
-
-#timer-r{
-  font-family: Anurati;
 }
 
 .animate-character
@@ -161,7 +142,7 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: textclip 2s linear infinite;
+  animation: textclip 4s linear infinite;
   display: inline-block;
   font-family: Lequire;
 }

@@ -1,5 +1,4 @@
 import { useState, useEffect, useRef } from "react";
-import sandglass from "./assets/sandglass.png";
 import audio from "./assets/audio.ogg";
 import mp3Audio from "./assets/audio.mp3";
 import "./App.css";
@@ -295,9 +294,6 @@ export default function App() {
 
   return (
     <>
-      <div>
-        <img src={sandglass} id="sandglass" alt="Sandglass" className="noselect" />
-      </div>
       <h1 id="title" className="noselect">
         REACT{" "}
         <span className="animate-character">
