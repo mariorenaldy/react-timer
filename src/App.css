@@ -1,3 +1,13 @@
+@font-face {
+  font-family: Anurati;
+  src: url(assets/Anurati-Pro-Regular.otf);
+}
+
+@font-face {
+  font-family: Lequire;
+  src: url(assets/Lequire-Regular.ttf);
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -45,7 +55,7 @@
 }
 
 .time-cursor {
-  border-right: 1px solid #fff;
+  box-shadow: 1px 0 0 0 #fff;
 }
 
 .time-unsure {
@@ -76,6 +86,7 @@
 
 #button-container {
   margin-top: 5%;
+  position: relative;
 }
 
 .button {
@@ -111,10 +122,61 @@
 }
 
 #sound-btn{
-background-color: transparent;
-border: transparent;
-cursor: pointer;
+  background-color: transparent;
+  border: transparent;
+  cursor: pointer;
+  position: absolute;
+  right: -15px;
+  top: 15px;
 }
+
 #sound-btn img{
-  width: 35px;
+  width: 27px;
+  filter: invert(1);
+  opacity: 0.7;
+}
+
+#title{
+  font-family: Anurati;
+}
+
+#timer-r{
+  font-family: Anurati;
+}
+
+.animate-character
+{
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-family: Lequire;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
