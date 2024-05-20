@@ -4,9 +4,17 @@
   font-weight: 400;
 
   color: black;
-  background-image: url(assets/desert.png);
+  background-image: url(assets/images/desert.png);
   background-position: center;
   background-size: cover;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  color: white;
 }
 
 body {

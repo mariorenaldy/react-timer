@@ -1,39 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
 
 @font-face {
-  font-family: Anurati;
-  src: url(assets/Anurati-Pro-Regular.otf);
-}
-
-@font-face {
   font-family: Lequire;
-  src: url(assets/Lequire-Regular.ttf);
-}
-
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-  color: white;
-}
-
-#title{
-  font-family: Anurati;
-  font-size: 3em;
-}
-
-#timer-r{
-  font-family: Anurati;
-}
-
-#input-time {
-  text-align: right;
-  background-color: transparent;
-  border: none;
-  border-bottom: 2px solid orange;
-  color: white;
-  outline: none;
+  src: url(../assets/fonts/Lequire-Regular.ttf);
 }
 
 .time-separator {

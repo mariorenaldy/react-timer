@@ -1,0 +1,13 @@
+@font-face {
+  font-family: Anurati;
+  src: url(../assets/fonts/Anurati-Pro-Regular.otf);
+}
+
+#title{
+  font-family: Anurati;
+  font-size: 3em;
+}
+
+#timer-r{
+  font-family: Anurati;
+}
