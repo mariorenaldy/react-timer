@@ -285,10 +285,10 @@ export default function TimeWidget() {
 
   function soundChange(event) {
     if (mute) {
-      event.target.src = "/src/assets/images/volume.png";
+      event.target.src = "assets/images/volume.png";
       setMute(false);
     } else {
-      event.target.src = "/src/assets/images/mute.png";
+      event.target.src = "assets/images/mute.png";
       setMute(true);
     }
   }

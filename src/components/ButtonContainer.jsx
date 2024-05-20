@@ -11,7 +11,7 @@ export default function ButtonContainer({ running, playing, startTimer, resetTim
         {"Reset"}
       </Button>
       <Button id="sound-btn" handleClick={soundChange}>
-        <img src="/src/assets/images/volume.png" alt="volume" />
+        <img src="assets/images/volume.png" alt="volume" />
       </Button>
     </div>
   );
